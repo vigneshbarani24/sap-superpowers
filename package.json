@@ -1,0 +1,12 @@
+{
+  "name": "sap-superpowers",
+  "version": "1.0.0",
+  "description": "AI skills for SAP consultants — the SAP consultant's AI operating system",
+  "author": "vigneshbarani24",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vigneshbarani24/sap-superpowers.git"
+  },
+  "keywords": ["sap", "claude-code", "skills", "consulting", "abap", "s4hana"]
+}

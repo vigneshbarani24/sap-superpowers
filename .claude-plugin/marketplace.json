@@ -1,0 +1,15 @@
+{
+  "name": "sap-superpowers",
+  "owner": {
+    "name": "vigneshbarani24",
+    "url": "https://github.com/vigneshbarani24"
+  },
+  "plugins": [
+    {
+      "name": "sap-superpowers",
+      "source": "./",
+      "version": "1.0.0",
+      "description": "AI skills for SAP consultants — process workflows, domain knowledge, and project accelerators"
+    }
+  ]
+}

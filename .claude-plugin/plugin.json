@@ -1,0 +1,18 @@
+{
+  "name": "sap-superpowers",
+  "description": "AI skills for SAP consultants — process workflows, domain knowledge, and project accelerators for the entire SAP lifecycle",
+  "version": "1.0.0",
+  "author": {
+    "name": "vigneshbarani24",
+    "url": "https://github.com/vigneshbarani24"
+  },
+  "homepage": "https://github.com/vigneshbarani24/sap-superpowers",
+  "repository": "https://github.com/vigneshbarani24/sap-superpowers",
+  "license": "MIT",
+  "keywords": [
+    "sap", "abap", "s4hana", "rise", "btp", "fiori", "clean-core",
+    "migration", "activate", "basis", "consulting", "fi", "co",
+    "mm", "sd", "pp", "pm", "hcm", "successfactors", "integration",
+    "hana", "cap", "rap", "grc", "security", "estimation"
+  ]
+}
