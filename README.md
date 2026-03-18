@@ -283,9 +283,6 @@ A: No. The plugin is pure Markdown files — no telemetry, no API calls, no data
 **Q: Can I use this with Cursor or other AI assistants?**
 A: The hook system supports Cursor out of the box. Other platforms may work with manual skill invocation.
 
-**Q: How is this different from secondsky/sap-skills?**
-A: secondsky/sap-skills provides excellent reference knowledge (35 skills for BTP/CAP/ABAP). SAP Superpowers is **process-driven** — it doesn't just tell you what, it guides you *how* with enforced workflows, hard gates, and checklists. They complement each other.
-
 ---
 
 ## License
