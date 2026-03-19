@@ -1,5 +1,5 @@
 ---
-description: "SAP clean core code review (coming soon)"
+description: "Invoke the sap-code-review skill for SAP clean core code review"
 ---
 
-The `sap-code-review` skill is planned for a future release. It will enforce clean core compliance, ABAP Cloud patterns, and released API usage.
+Invoke the `sap-superpowers:sap-code-review` skill to review ABAP, CDS, or CAP code for clean core compliance and best practices. Follow the skill's checklist exactly.
