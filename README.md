@@ -6,6 +6,7 @@
 [![Skills](https://img.shields.io/badge/Skills-26-brightgreen.svg)](skills/)
 [![Process Skills](https://img.shields.io/badge/Process_Skills-10-orange.svg)](skills/)
 [![Reference Skills](https://img.shields.io/badge/Reference_Skills-16-purple.svg)](skills/)
+[![Agents](https://img.shields.io/badge/Agents-6-red.svg)](agents/)
 [![Version](https://img.shields.io/badge/Version-2.0.0-blue.svg)](CHANGELOG.md)
 
 > What [superpowers](https://github.com/obra/superpowers) did for software engineering, SAP Superpowers does for SAP consulting. Not just reference docs — **enforced workflows with hard gates, checklists, and decision trees** that guide you through complex SAP processes step by step.
@@ -14,17 +15,13 @@
 
 ## Why SAP Superpowers?
 
-Other SAP AI tools give you **knowledge**. We give you **process**.
+Other SAP AI tools give you **knowledge**. We give you **process + agents**.
 
-| | SAP Superpowers | Knowledge-only plugins | SAP Joule |
-|---|---|---|---|
-| **Guided workflows** | 10 process skills with hard gates | None | None |
-| **Can't skip steps** | Enforced checklists, evidence required | No enforcement | No enforcement |
-| **Decision trees** | Graphviz flowcharts for routing | None | None |
-| **Domain coverage** | Full SAP lifecycle (dev + functional + PM + OCM) | Dev-only (BTP/CAP/ABAP/Fiori) | In-system only |
-| **Cross-system** | Works with any technology stack | SAP dev tools only | SAP Cloud only |
-| **Cost** | Free, open source, MIT | Free (GPL-3.0) | Requires RISE/license |
-| **Telemetry** | None. Zero. No phone home. | None | SAP collects usage data |
+- **10 process skills** with hard gates — you literally cannot skip steps
+- **6 specialized agents** that get dispatched automatically to do focused work
+- **16 reference skills** covering the full SAP lifecycle (dev + functional + PM + OCM)
+- **4 slash commands** for instant access to common workflows
+- **Zero telemetry.** Pure Markdown. No API keys. No dependencies.
 
 ---
 
@@ -178,7 +175,7 @@ Claude:  HARD GATE: All 10 gates must PASS before declaring readiness.
 │  │  └── 16 reference skills (domain knowledge)   │  │
 │  │                                               │  │
 │  │  commands/ (4 slash commands)                  │  │
-│  │  agents/ (sap-reviewer subagent)              │  │
+│  │  agents/ (6 specialized subagents)            │  │
 │  │                                               │  │
 │  └───────────────────────────────────────────────┘  │
 │                                                     │
@@ -197,6 +194,21 @@ Claude:  HARD GATE: All 10 gates must PASS before declaring readiness.
 
 ---
 
+## Agents — Specialists That Do the Work
+
+Skills guide the process. Agents do focused work. When you trigger a skill, it can automatically dispatch a specialized subagent — a separate AI instance that handles a specific task and reports back.
+
+| Agent | Dispatched By | What It Does |
+|-------|--------------|-------------|
+| `sap-reviewer` | `sap-code-review` | Analyzes ABAP/CDS code against clean core rules, classifies ABAP Cloud tier, flags deprecated APIs |
+| `sap-estimator` | `sap-estimation` | Decomposes work items, applies SAP complexity multipliers, produces range estimates |
+| `sap-migration-analyzer` | `s4hana-migration` | Scans custom code for S/4HANA compatibility, classifies as must-fix/should-fix/nice-to-fix |
+| `sap-test-designer` | `sap-testing-strategy` | Generates test cases from process descriptions — positive, negative, boundary, integration |
+| `sap-value-calculator` | `sap-value-advisory` | Builds ROI/TCO models, calculates NPV/IRR, runs sensitivity analysis across scenarios |
+| `sap-security-auditor` | `sap-security-grc` | Reviews authorization for SoD conflicts, flags over-privileged access (SAP_ALL, broad S_TCODE) |
+
+---
+
 ## Who This Is For
 
 | Role | Top Skills |
@@ -210,23 +222,22 @@ Claude:  HARD GATE: All 10 gates must PASS before declaring readiness.
 
 ---
 
-## vs. Competitors
+## What Makes Us Different
 
-| Feature | SAP Superpowers | secondsky/sap-skills | sap-pce-expert | SAP Joule |
-|---------|----------------|---------------------|----------------|-----------|
-| Skills/Plugins | 26 | 32 | 11 | 2,100+ |
-| **Process workflows** | **10 with hard gates** | **0** | **0** | **0** |
-| Functional modules | FI, CO, MM, SD, PP, PM, SF | None | PCE only | All (in-system) |
-| Project management | Kickoff, estimation, go-live | None | None | None |
-| Change management | Full OCM workflow | None | None | None |
-| Value advisory / ROI | TCO, NPV, IRR modeling | None | None | None |
-| Code review | Clean core + ABAP Cloud tiers | ABAP patterns | None | Basic |
-| Migration guidance | Decision trees + tool coverage | None | None | Readiness checks |
-| License | MIT | GPL-3.0 | MIT | Proprietary |
-| Telemetry | None | None | None | SAP collects |
-| Cost | Free | Free | Free | Requires RISE |
+Most SAP AI tools give you **knowledge** — here's how a CDS view works, here's the tcode. We give you **process** — enforced step-by-step workflows where you can't skip steps, with specialized agents doing focused work.
 
-**Our differentiator:** No one else combines process-driven workflows (superpowers-style) with SAP domain expertise. Everyone else does knowledge OR code, not guided process.
+| Capability | SAP Superpowers |
+|-----------|----------------|
+| **Process workflows with hard gates** | 10 — no other SAP AI tool has any |
+| **Specialized subagents** | 6 — dispatched automatically during workflows |
+| **Functional module coverage** | FI, CO, MM, SD, PP, PM, SF — not just dev tools |
+| **Project management** | Kickoff, estimation, go-live readiness |
+| **Change management** | Full OCM workflow with adoption tracking |
+| **Value advisory** | TCO, NPV, IRR modeling with sensitivity analysis |
+| **Migration guidance** | Decision trees for brownfield/greenfield/bluefield |
+| **Clean core code review** | ABAP Cloud tier classification + anti-pattern detection |
+| **Telemetry** | None. Zero. No phone home. |
+| **Cost** | Free, MIT licensed |
 
 ---
 
@@ -256,8 +267,18 @@ A: No. Pure Markdown files. No telemetry, no API calls, no data collection. Ever
 **Q: Can I use this with Cursor?**
 A: The hook system supports Cursor. Other platforms may work with manual skill invocation.
 
-**Q: How is this different from secondsky/sap-skills?**
-A: They provide 32 knowledge-only plugins for BTP/CAP/ABAP development. We provide 10 process-driven workflows (with hard gates you can't skip) + 16 reference skills covering the entire SAP lifecycle including functional, PM, and change management.
+**Q: How is this different from other SAP AI plugins?**
+A: Others provide knowledge-only plugins for developers. We provide process-driven workflows with hard gates you can't skip, specialized agents, and coverage across the entire SAP lifecycle — including functional, PM, OCM, and value advisory.
+
+---
+
+## Roadmap
+
+- [x] **v1.0** — 3 process skills, plugin scaffold, hooks, CI
+- [x] **v2.0** — 26 skills (10 process + 16 reference), 6 agents, 4 commands *(you are here)*
+- [ ] **v2.1** — MCP servers (SAP Notes search, API Business Hub lookup, released API checker)
+- [ ] **v2.2** — More agents (data migration planner, cutover runbook generator)
+- [ ] **v3.0** — Premium skills (separate repo) for advanced deliverable automation
 
 ---
 
