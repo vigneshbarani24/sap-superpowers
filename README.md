@@ -276,9 +276,9 @@ A: Others provide knowledge-only plugins for developers. We provide process-driv
 
 - [x] **v1.0** — 3 process skills, plugin scaffold, hooks, CI
 - [x] **v2.0** — 26 skills (10 process + 16 reference), 6 agents, 4 commands *(you are here)*
-- [ ] **v2.1** — MCP servers (SAP Notes search, API Business Hub lookup, released API checker)
-- [ ] **v2.2** — More agents (data migration planner, cutover runbook generator)
-- [ ] **v3.0** — Premium skills (separate repo) for advanced deliverable automation
+- [ ] **v2.1** — MCP servers for SAP ecosystem integration
+- [ ] **v2.2** — Additional agents and community-requested skills
+- [ ] **v3.0** — Pro tier with advanced deliverable generation
 
 ---
 
