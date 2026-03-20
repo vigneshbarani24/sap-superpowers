@@ -4,3 +4,6 @@
 .DS_Store
 Thumbs.db
 node_modules/
+
+# Internal docs (specs, strategy, pricing) — never push to public repo
+docs/
