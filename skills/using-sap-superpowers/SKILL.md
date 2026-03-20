@@ -23,6 +23,7 @@ You have SAP Superpowers — a comprehensive set of AI skills for SAP consultant
 | `sap-go-live-readiness` | Preparing for go-live, cutover planning, readiness assessments |
 | `sap-estimation` | Estimating effort, timelines, or complexity for SAP work |
 | `sap-change-management` | Planning OCM, stakeholder analysis, training, adoption tracking |
+| `sap-value-advisory` | Building business cases, ROI/TCO models, value engineering, investment justification |
 
 ## Reference Skills
 
@@ -43,6 +44,7 @@ You have SAP Superpowers — a comprehensive set of AI skills for SAP consultant
 | `s4hana-migration` | Brownfield/greenfield/bluefield, SUM, custom code remediation |
 | `sap-activate-methodology` | Activate phases, deliverables, quality gates, fit-to-standard |
 | `rise-licensing` | RISE/GROW models, HUoM, SAPS, BTP credits, contract structures |
+| `sap-joule` | SAP Joule AI copilot — capabilities, limitations, ROI, Joule vs external AI |
 
 ## Routing Logic
 
@@ -60,6 +62,8 @@ When the user mentions SAP topics, match against the skill tables above and invo
 - Migration/conversion → `s4hana-migration`
 - Methodology/phases → `sap-activate-methodology`
 - Licensing/RISE/GROW → `rise-licensing`
+- Business case/ROI/TCO/value → `sap-value-advisory`
+- Joule/AI copilot → `sap-joule`
 
 ## Slash Commands
 
