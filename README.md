@@ -8,6 +8,7 @@
 [![Reference Skills](https://img.shields.io/badge/Reference_Skills-16-purple.svg)](skills/)
 [![Agents](https://img.shields.io/badge/Agents-6-red.svg)](agents/)
 [![Version](https://img.shields.io/badge/Version-2.0.0-blue.svg)](CHANGELOG.md)
+[![Website](https://img.shields.io/badge/Website-sap--superpowers.vercel.app-black.svg)](https://sap-superpowers.vercel.app/)
 
 > What [superpowers](https://github.com/obra/superpowers) did for software engineering, SAP Superpowers does for SAP consulting. Not just reference docs — **enforced workflows with hard gates, checklists, and decision trees** that guide you through complex SAP processes step by step.
 
