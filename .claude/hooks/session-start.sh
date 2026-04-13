@@ -1,0 +1,30 @@
+#!/bin/bash
+# SAP Superpowers v3.0 — Session Start Hook
+# Runs at the start of every Claude Code session in an SAP project.
+# Injects plugin context so the agent knows what capabilities are available.
+
+echo "========================================================"
+echo " SAP Superpowers v3.0 — Loaded"
+echo "========================================================"
+echo ""
+echo " GUIDANCE:"
+echo " Use the 'using-sap-superpowers' meta-skill for routing"
+echo " guidance on which skill, agent, or command to invoke."
+echo ""
+echo " AVAILABLE CAPABILITIES:"
+echo " Skills : 46+ (meta, consulting, development, delivery,"
+echo "               modules, strategic)"
+echo " Agents : 10  (reviewer, estimator, migration-analyzer,"
+echo "               test-designer, value-calculator,"
+echo "               security-auditor, architect, data-analyst,"
+echo "               doc-generator, process-modeler)"
+echo " Commands: 6  (/sap-debug, /sap-estimate, /sap-kickoff,"
+echo "               /sap-review, /sap-doc, /sap-migrate)"
+echo ""
+echo " IRON LAWS (always enforced):"
+echo " - Never skip verification steps"
+echo " - Always produce a tangible deliverable for process skills"
+echo " - Hard gates must be satisfied with evidence, not assumptions"
+echo " - Three-point estimates only — single numbers are blocked"
+echo ""
+echo "========================================================"
