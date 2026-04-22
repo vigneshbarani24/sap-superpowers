@@ -1,205 +1,114 @@
 <p align="center">
-  <h1 align="center">SAP Superpowers</h1>
+  <h1 align="center">⭐ SAP Superpowers</h1>
   <p align="center">
-    <strong>The AI operating system for SAP consultants.</strong><br>
-    55 skills. 25 agents. 8 commands. 14 industries. 16 countries.<br>
-    Delivery factory. Solution accelerators. Enterprise data protection.
+    <strong>Claude, fluent in SAP.</strong><br>
+    55 skills. 25 agents. 8 commands. Open source. Free forever.
   </p>
   <p align="center">
-    <a href="https://github.com/vigneshbarani24/sap-superpowers/stargazers"><img src="https://img.shields.io/github/stars/vigneshbarani24/sap-superpowers?style=flat-square&color=yellow" alt="Stars"></a>
-    <a href="https://github.com/vigneshbarani24/sap-superpowers/network/members"><img src="https://img.shields.io/github/forks/vigneshbarani24/sap-superpowers?style=flat-square" alt="Forks"></a>
-    <a href="https://github.com/vigneshbarani24/sap-superpowers/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License"></a>
-    <img src="https://img.shields.io/badge/version-3.1.0-purple?style=flat-square" alt="Version">
-    <img src="https://img.shields.io/badge/skills-55-green?style=flat-square" alt="Skills">
-    <img src="https://img.shields.io/badge/agents-25-orange?style=flat-square" alt="Agents">
-    <img src="https://img.shields.io/badge/SAP-S%2F4HANA%20%7C%20ECC%20%7C%20BTP-0070C0?style=flat-square" alt="SAP">
+    <a href="https://github.com/vigneshbarani24/sap-superpowers/stargazers"><img src="https://img.shields.io/github/stars/vigneshbarani24/sap-superpowers?style=for-the-badge&color=D97757&label=%E2%98%85%20stars" alt="Stars"></a>
+    <a href="https://github.com/vigneshbarani24/sap-superpowers/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-0070F2?style=for-the-badge" alt="License"></a>
+    <img src="https://img.shields.io/badge/telemetry-zero-10A46B?style=for-the-badge" alt="No telemetry">
   </p>
 </p>
 
 ---
 
-> **One plugin. Every SAP module. Every project phase. Every deliverable.**
->
-> SAP Superpowers turns Claude into a senior SAP consultant who enforces the right process, generates production-ready deliverables, and can run an entire project phase autonomously.
+> **Turn Claude into a senior SAP consultant in 30 seconds.**
+> Works with **Claude Free, Pro, Max, and API**. No paid tier required.
 
-## Install (30 seconds)
+## ⚡ Install in 30 seconds
 
-```bash
-# Claude Code Plugin Marketplace
-claude plugin add sap-superpowers@vigneshbarani24-sap-superpowers
+Pick whichever Claude you already have:
 
-# Or manual install
-git clone https://github.com/vigneshbarani24/sap-superpowers.git
-cd sap-superpowers && claude plugin install .
-```
-
-**Zero dependencies. Zero API keys. Zero telemetry. Works offline.**
-
-## What It Does
-
-### Delivery Factory — One Command, One Phase, All Deliverables
-
-```
-/sap-deliver discover    → Project charter, stakeholder map, requirements, risks, scope
-/sap-deliver prepare     → Estimation, architecture, change management, business case
-/sap-deliver explore     → Fit/gap matrix, process designs, functional specs, test strategy
-/sap-deliver realize     → Technical specs, code, unit tests, code review, SIT, training
-/sap-deliver deploy      → Data migration, cutover runbook, go-live readiness, UAT, transports
-/sap-deliver run         → Hypercare, status reports, value realization, lessons learned
-```
-
-**32 deliverables across 6 SAP Activate phases.** Quality-scored (L1-L5). Context-aware. What costs $50K-$500K to produce manually.
-
-### Solution Accelerators — 60% Pre-Built
-
-```
-/sap-accelerate order-to-cash      → Process flow, fit/gap, FS, config guide, 30 test cases
-/sap-accelerate procure-to-pay     → Procurement pipeline, release strategy, tolerance config
-/sap-accelerate record-to-report   → Chart of accounts, closing tasks, tax logic, audit trail
-/sap-accelerate plan-to-produce    → BOM/routing, MRP config, QM integration, capacity
-/sap-accelerate hire-to-retire     → Org structure, infotypes, payroll, time management
-```
-
-Each accelerator adapts to your **industry** (14 supported) and **country** (16 localized).
-
-### Autonomous Development
-
-```
-/sap-debug              → Systematic root cause analysis
-/sap-estimate           → Three-point WBS decomposition (single numbers blocked)
-/sap-kickoff            → SAP Activate Phase 0-1 charter
-/sap-review             → 4-dimension code review (quality, performance, security, clean core)
-/sap-doc                → Functional spec, technical spec, user guide, training
-/sap-migrate            → S/4HANA migration assessment
-```
-
-**Autopilot:** Idea → requirements → design → code → test → ATC → activate → transport. One command.
-
-**Self-correcting loop:** Fix → syntax check → ATC → unit tests → repeat until clean. Max 10 iterations.
-
-**Team execution:** Parallel multi-agent dispatch with conflict resolution and merged deliverables.
-
-## 55 Skills
-
-| Category | Count | Highlights |
-|----------|-------|-----------|
-| **Meta** | 7 | Delivery factory, solution accelerator, team execution, sap-doctor, verification |
-| **Consulting** | 9 | Deep interview, estimation, fit-gap, solution architecture, value advisory |
-| **Development** | 8 | Autopilot, self-correcting loop, code generation, code review, program-to-spec |
-| **Delivery** | 6 | Testing strategy, data migration, cutover, go-live readiness, transport release |
-| **Modules** | 20 | FI, CO, MM, SD, PP, PM, QM, HCM, EWM, TM, Ariba, BTP, ABAP Cloud + 7 more |
-| **Strategic** | 5 | S/4HANA migration, SAP Activate, RISE licensing, clean core, Joule |
-
-Every skill enforces behavior through **Iron Laws**, **Rationalization Tables**, **Red Flags**, and **Hard Gates**. Not guidance — enforcement.
-
-## 25 Agents
-
-**Core (10):** Reviewer, Estimator, Migration Analyzer, Test Designer, Value Calculator, Security Auditor, Architect, Data Analyst, Doc Generator, Process Modeler
-
-**Module Consultants (15):** SD, MM, FI, CO, PP, PS, PM, QM, HCM, WM, TM, TR, BW, Ariba, Basis
-
-Dispatched automatically by skills. Run in parallel via team execution.
-
-## Enterprise Features
-
-### Data Protection (8 categories)
-Hard-block sensitive tables (payroll, credentials, national IDs). Soft-block business data with warnings. Per-session approval protocol. Never blanket access.
-
-### Enforcement Hooks (6 lifecycle events)
-| Hook | What It Does |
-|------|-------------|
-| **PreToolUse** | Blocks sensitive table access, validates transport discipline |
-| **PostToolUse** | Checks syntax errors, ATC findings, activation failures |
-| **UserPromptSubmit** | Auto-routes to relevant skill based on keywords |
-| **PreCompact** | Preserves transport numbers and SAP context |
-| **SessionStart** | Loads config, detects platform, injects context |
-
-### 14 Industries
-Retail, Automotive, Pharma, F&B, Chemical, Electronics, Construction, Utilities, Banking, Public Sector, Fashion, Steel, Cosmetics, Tire
-
-### 16 Countries
-US, Germany, UK, India, Japan, South Korea, France, Italy, Spain, Netherlands, Brazil, Mexico, Australia, Singapore, China, EU-wide
-
-Each with tax systems, e-invoicing formats, banking standards, regulatory requirements.
-
-### 13 Coding Standards
-Naming conventions, Clean ABAP, OOP patterns, ALV rules, include structure, constants, text elements, ABAP release reference (702-758), SAP version awareness (ECC vs S/4HANA), error handling, testing, Dynpro.
-
-### 15 SPRO Configuration Guides
-Module-specific customizing references with real SPRO paths, config tables, and dependency sequences.
-
-## MCP Integration
-
-Connect to live SAP systems via MCP ABAP ADT server:
+### Option 1 — Claude Code (Pro / Max)
 
 ```bash
-# Initialize project
-node scripts/setup-init.mjs
-
-# Configure SAP connection
-# Edit .sap-superpowers/sap.env with your ADT credentials
-
-# Run diagnostics
-# Use /sap-doctor to verify plugin, MCP, and SAP system health
+/plugin marketplace add vigneshbarani24/sap-superpowers
 ```
 
-Supports: `abap-mcp-adt-powerup` | stdio / HTTP / SSE transport | Auto-preflight checks
+### Option 2 — Claude.ai (Free or Pro, in the browser)
 
-## Architecture
+1. Go to [github.com/vigneshbarani24/sap-superpowers](https://github.com/vigneshbarani24/sap-superpowers)
+2. Download the repo as ZIP, or clone it
+3. Drag the `skills/` folder into a Claude.ai conversation as a Project
+4. Ask: *"Use these skills. Help me debug this SAP error."*
+
+That's it. **Free tier works fine** — you just paste skills as project knowledge.
+
+### Option 3 — Any other AI IDE
+
+Cursor, Codex, Gemini CLI, Copilot CLI — they all read Markdown. Point them at `skills/` and go.
+
+---
+
+## 🎯 What You Get
+
+**55 skills** that force Claude to do SAP the right way:
 
 ```
-sap-superpowers/
-├── skills/          55 behavior-shaping skills (meta, consulting, dev, delivery, modules, strategic)
-├── agents/          25 specialized agents (10 core + 15 module consultants)
-├── commands/        8 slash commands (/sap-deliver, /sap-accelerate, /sap-debug, etc.)
-├── factory/         Delivery factory engine (quality scoring, deliverable registry)
-├── accelerators/    Pre-built solution packages (O2C, P2P, R2R, P2P-Mfg, H2R)
-├── hooks/           6 enforcement hooks (PreToolUse, PostToolUse, prompt router, etc.)
-├── common/          13 coding standard files
-├── industry/        14 industry reference files
-├── country/         16 country localization files
-├── configs/         15 SPRO configuration guides
-├── exceptions/      8 data protection blocklist categories
-├── knowledge/       SAP Notes index, tcodes, released APIs, patterns
-├── bridge/          MCP server launcher with 3-tier config resolution
-└── scripts/         Setup wizard, maintenance utilities
+/sap-debug       →  Systematic root-cause diagnosis (7 steps, evidence required)
+/sap-estimate    →  Three-point WBS estimation with SAP complexity multipliers
+/sap-review      →  Code review — clean core, performance, security, ATC
+/sap-kickoff     →  Full SAP Activate project charter in one command
+/sap-migrate     →  S/4HANA migration assessment with must-fix / nice-to-fix
+/sap-doc         →  Functional spec, technical spec, user guide, training deck
+/sap-deliver     →  Entire Activate phase — all deliverables, one command
+/sap-accelerate  →  Pre-built O2C, P2P, R2R, H2R, P2Mfg accelerators
 ```
 
-**180+ files. Zero npm dependencies. Pure Markdown + shell + JS hooks.**
+**25 agents** dispatched automatically — sap-reviewer, sap-estimator, sap-migration-analyzer, sap-security-auditor, plus 15 module consultants (SD, MM, FI, CO, PP, PM, QM, HCM, WM, TM, BW, Ariba, Basis, TR, PS).
 
-## Why SAP Superpowers
+**Zero telemetry. Zero API keys. Zero servers.** Pure Markdown + hooks. Your client data never leaves your laptop.
 
-| Problem | SAP Superpowers |
-|---------|----------------|
-| AI gives generic SAP advice | 55 skills with enforced methodology — Iron Laws prevent shortcuts |
-| Consultants recreate deliverables every project | Delivery factory produces all phase artifacts in one command |
-| New consultants lack module depth | 15 module consultant agents with real transaction codes and SPRO paths |
-| Code generation ignores SAP standards | 13 coding standards enforced, ABAP release-aware (702-758) |
-| No industry context | 14 industry files with specific processes, master data, and regulations |
-| Data protection ignored | 8 blocklist categories with hard/soft blocks on 80+ sensitive tables |
-| Projects use different SAP versions | SAP version awareness — ECC 6.0, S/4HANA on-prem, S/4HANA Cloud all supported |
+---
 
-## No Telemetry
+## 🔥 Why it goes viral in SAP teams
 
-SAP Superpowers collects **zero data**. No usage tracking. No analytics. No phone-home. Your SAP landscape details, client data, and code stay on your machine. Always.
+- **Iron Laws** — skills refuse shortcuts. The model literally can't say "done" without evidence.
+- **Hard Gates** — 10 go-live gates that block advancement until proof is attached.
+- **Data protection hooks** — 8 blocklist categories. Client names, tenant IDs, payroll data never leak.
+- **Clean-core safe** — every generated line respects the extensibility model.
+- **Joule-aware** — pairs with SAP Joule. See the [companion guide](https://github.com/vigneshbarani24/sap-superpowers/blob/main/docs/joule-companion.md).
 
-## Contributing
+## 📣 Help it reach every SAP consultant on Earth
 
-We welcome contributions from SAP practitioners. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+1. **⭐ Star the repo** — it's the only growth signal we rely on.
+2. **📢 Share it** — drop the link in your SAP Teams channel, LinkedIn, or SAP Community.
+3. **🛠️ Contribute** — one skill per PR. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-**One skill per PR.** Every skill must include Iron Laws, Rationalization Table, Red Flags, Hard Gates, and Verification.
+> *"Joule tells you the warehouse is on fire. Superpowers hands you the extinguisher,
+> the root-cause report, the transport, and the post-mortem — before the steering
+> committee finishes their coffee."*
 
-## License
+---
 
-MIT — use it commercially, modify it, distribute it. No restrictions.
+## 📦 What's inside
 
-## Author
+| | |
+|---|---|
+| **Skills** | 55 (meta, consulting, dev, delivery, module reference, strategic) |
+| **Agents** | 25 (10 core + 15 module consultants) |
+| **Commands** | 8 slash commands |
+| **Hooks** | 6 (PreToolUse, PostToolUse, prompt router, pre-compact, session start) |
+| **Industries** | 14 (retail, auto, pharma, F&B, chemical, electronics, construction, utilities, banking, public sector, fashion, steel, cosmetics, tire) |
+| **Countries** | 16 localizations (US, DE, UK, IN, JP, KR, FR, IT, ES, NL, BR, MX, AU, SG, CN, EU) |
+| **SAP versions** | ECC 6.0, S/4HANA on-prem, S/4HANA Cloud, BTP, RISE |
 
-**vigneshbarani24** | KaarTech UK
+---
+
+## 📝 License
+
+**MIT.** Use it commercially. Fork it. Sell services around it. No restrictions.
+
+## ❤️ Author
+
+Built by **vigneshbarani24** at KaarTech UK — because the SAP consulting world deserved better tooling.
 
 ---
 
 <p align="center">
-  <strong>If SAP Superpowers saves you time, give it a star.</strong><br>
-  <a href="https://github.com/vigneshbarani24/sap-superpowers">https://github.com/vigneshbarani24/sap-superpowers</a>
+  <strong>If this saves you an hour, give it a star. If it saves you a week, tell your team.</strong><br><br>
+  <a href="https://github.com/vigneshbarani24/sap-superpowers">
+    <img src="https://img.shields.io/badge/%E2%98%85%20Star%20on%20GitHub-D97757?style=for-the-badge&logoColor=white" alt="Star on GitHub">
+  </a>
 </p>
