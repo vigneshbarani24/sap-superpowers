@@ -1,21 +1,42 @@
 {
-  "name": "SAP Superpowers",
-  "slug": "sap-superpowers",
-  "tagline": "AI operating system for SAP consultants — 55 skills, 25 agents, delivery factory",
-  "description": "Transform Claude into a senior SAP consultant with enforced methodology, autonomous code pipelines, and a delivery factory that produces entire project phases. Covers FI, CO, MM, SD, PP, PM, QM, HCM, BW, Ariba, BTP, and 8 more modules. Industry-specific (14 industries), country-localized (16 countries), enterprise-grade data protection.",
-  "icon": "https://raw.githubusercontent.com/vigneshbarani24/sap-superpowers/main/assets/icon.png",
-  "screenshots": [],
-  "install_command": "claude plugin add sap-superpowers@vigneshbarani24-sap-superpowers",
-  "categories": ["enterprise", "consulting", "development"],
-  "featured": false,
-  "stats": {
-    "skills": 55,
-    "agents": 25,
-    "commands": 8,
-    "industries": 14,
-    "countries": 16,
-    "coding_standards": 13,
-    "spro_configs": 15,
-    "blocklist_categories": 8
-  }
+  "name": "sap-superpowers",
+  "owner": {
+    "name": "vigneshbarani24",
+    "url": "https://github.com/vigneshbarani24"
+  },
+  "metadata": {
+    "description": "AI operating system for SAP consultants — 55 skills, 25 agents, delivery factory",
+    "version": "3.1.0"
+  },
+  "plugins": [
+    {
+      "name": "sap-superpowers",
+      "source": "./",
+      "description": "Transform Claude into a senior SAP consultant with enforced methodology, autonomous code pipelines, and a delivery factory that produces entire project phases. Covers FI, CO, MM, SD, PP, PM, QM, HCM, BW, Ariba, BTP, and 8 more modules. Industry-specific (14 industries), country-localized (16 countries), enterprise-grade data protection.",
+      "version": "3.1.0",
+      "author": "vigneshbarani24",
+      "license": "MIT",
+      "homepage": "https://sap-superpowers.md",
+      "repository": "https://github.com/vigneshbarani24/sap-superpowers",
+      "icon": "https://raw.githubusercontent.com/vigneshbarani24/sap-superpowers/main/assets/icon.png",
+      "category": "enterprise",
+      "tags": [
+        "sap",
+        "abap",
+        "s4hana",
+        "consulting",
+        "erp",
+        "fiori",
+        "btp",
+        "sap-activate",
+        "clean-core",
+        "rap",
+        "cds",
+        "migration",
+        "estimation",
+        "code-review",
+        "delivery-factory"
+      ]
+    }
+  ]
 }
