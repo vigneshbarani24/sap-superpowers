@@ -1,0 +1,20 @@
+{
+  "category": "HR & Payroll",
+  "description": "Employee compensation, payroll results, and sensitive HR data. Access requires explicit HR authorization and business justification.",
+  "tables": [
+    { "table": "PA0008", "description": "Basic Pay infotype", "level": "hard", "category": "Payroll", "reason": "Contains employee salary data", "alternatives": "Aggregated headcount reports via CDS I_HCBudgetActual" },
+    { "table": "PA0014", "description": "Recurring Payments/Deductions", "level": "hard", "category": "Payroll", "reason": "Contains recurring compensation details" },
+    { "table": "PA0015", "description": "Additional Payments", "level": "hard", "category": "Payroll", "reason": "Contains bonus and additional payment data" },
+    { "table": "PA0057", "description": "Membership Fees", "level": "soft", "category": "HR", "reason": "Contains union/professional membership data" },
+    { "table": "RGDIR", "description": "Payroll Directory", "level": "hard", "category": "Payroll", "reason": "Payroll run results directory" },
+    { "table": "PCL1", "description": "Payroll Cluster 1", "level": "hard", "category": "Payroll", "reason": "Raw payroll cluster data" },
+    { "table": "PCL2", "description": "Payroll Cluster 2", "level": "hard", "category": "Payroll", "reason": "Payroll results cluster data" },
+    { "table": "PA0002", "description": "Personal Data", "level": "hard", "category": "PII", "reason": "Contains date of birth, nationality, gender" },
+    { "table": "PA0006", "description": "Address infotype", "level": "hard", "category": "PII", "reason": "Contains employee home addresses" },
+    { "table": "PA0009", "description": "Bank Details", "level": "hard", "category": "Banking", "reason": "Contains employee bank account numbers" },
+    { "table": "PA0105", "description": "Communication", "level": "soft", "category": "PII", "reason": "Contains email, phone numbers" },
+    { "table": "PA0077", "description": "Additional Personal Data", "level": "hard", "category": "PII", "reason": "Contains ethnic origin, disability status" },
+    { "table": "HRP1000", "description": "Object infotype", "level": "soft", "category": "HR", "reason": "Organizational structure objects" },
+    { "table": "T510", "description": "Pay Scale Groups", "level": "soft", "category": "Payroll", "reason": "Pay scale structure — not individual data but sensitive compensation framework" }
+  ]
+}

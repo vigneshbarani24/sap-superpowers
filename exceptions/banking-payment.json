@@ -1,0 +1,17 @@
+{
+  "category": "Banking & Payment",
+  "description": "Bank accounts, payment runs, wire transfers, and financial instrument data. Contains PCI-sensitive and banking regulation data.",
+  "tables": [
+    { "table": "BNKA", "description": "Bank Master Record", "level": "hard", "category": "Banking", "reason": "Contains bank routing and account details", "alternatives": "Use I_BankDirectory CDS entity for non-sensitive bank metadata" },
+    { "table": "TIBAN", "description": "IBAN Details", "level": "hard", "category": "Banking", "reason": "Contains IBAN numbers" },
+    { "table": "REGUH", "description": "Settlement Data - Payment Program", "level": "hard", "category": "Payment", "reason": "Payment run header with amounts and bank details" },
+    { "table": "REGUP", "description": "Processed Items - Payment Program", "level": "hard", "category": "Payment", "reason": "Payment run line items with vendor/customer amounts" },
+    { "table": "PAYR", "description": "Payment Medium File", "level": "hard", "category": "Payment", "reason": "Contains payment file data including bank transfers" },
+    { "table": "PCEC", "description": "Pre-Check Extract", "level": "hard", "category": "Payment", "reason": "Check payment details" },
+    { "table": "FEBEP", "description": "Bank Statement Line Items", "level": "hard", "category": "Banking", "reason": "Contains bank statement transaction details" },
+    { "table": "FEBKO", "description": "Bank Statement Header", "level": "soft", "category": "Banking", "reason": "Bank statement header — may contain account numbers" },
+    { "table": "LFB1", "description": "Vendor Company Code Data", "level": "soft", "category": "Banking", "reason": "Contains vendor payment terms and bank details reference" },
+    { "table": "KNB1", "description": "Customer Company Code Data", "level": "soft", "category": "Banking", "reason": "Contains customer payment terms and dunning data" },
+    { "table": "BSEC", "description": "One-Time Account Data", "level": "hard", "category": "Banking", "reason": "Contains one-time vendor/customer bank details" }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "category": "Authentication & Security",
+  "description": "User credentials, authorization profiles, password hashes, and security audit data. Never extract — security breach risk.",
+  "tables": [
+    { "table": "USR02", "description": "User Logon Data", "level": "hard", "category": "Security", "reason": "Contains password hashes and logon metadata — extraction is a security incident" },
+    { "table": "USR04", "description": "User Master Authorizations", "level": "hard", "category": "Security", "reason": "Contains authorization profile assignments" },
+    { "table": "USR10", "description": "User Master Authorization Profiles", "level": "hard", "category": "Security", "reason": "Authorization profiles data" },
+    { "table": "USR12", "description": "User Master Authorization Values", "level": "hard", "category": "Security", "reason": "Actual authorization field values" },
+    { "table": "USR40", "description": "Prohibited Passwords", "level": "hard", "category": "Security", "reason": "Password policy table" },
+    { "table": "USGRP", "description": "User Groups", "level": "soft", "category": "Security", "reason": "User group assignments" },
+    { "table": "AGR_1251", "description": "Authorization Data for Activity Group", "level": "soft", "category": "Security", "reason": "Role authorization values" },
+    { "table": "AGR_USERS", "description": "Role-User Assignments", "level": "soft", "category": "Security", "reason": "Which users have which roles — sensitive for audit" },
+    { "table": "PRGN_CUST", "description": "Profile Generator Customizing", "level": "soft", "category": "Security", "reason": "Authorization generation parameters" },
+    { "table": "SEC_POLICY_ATTR", "description": "Security Policy Attributes", "level": "hard", "category": "Security", "reason": "System security policy configuration" },
+    { "table": "RSECTAB", "description": "Security Table", "level": "hard", "category": "Security", "reason": "Authorization table for reporting" }
+  ]
+}

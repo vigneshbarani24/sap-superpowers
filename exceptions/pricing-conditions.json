@@ -1,0 +1,16 @@
+{
+  "category": "Pricing & Conditions",
+  "description": "Pricing conditions, special agreements, rebates, discounts. Highly sensitive commercial data — leakage can violate NDAs and antitrust regulations.",
+  "tables": [
+    { "table": "KONV", "description": "Conditions (Transaction Data)", "level": "soft", "category": "Pricing", "reason": "Contains actual pricing conditions from sales/purchase documents", "alternatives": "Use I_BillingDocumentItemPrcgElmnt CDS entity" },
+    { "table": "KONH", "description": "Conditions Header", "level": "soft", "category": "Pricing", "reason": "Pricing condition records header" },
+    { "table": "KONP", "description": "Conditions Items", "level": "hard", "category": "Pricing", "reason": "Actual condition rates and amounts — competitive intelligence" },
+    { "table": "A003", "description": "Material-Dependent Conditions", "level": "soft", "category": "Pricing", "reason": "Material pricing condition access" },
+    { "table": "A004", "description": "Material w/ Release Status", "level": "soft", "category": "Pricing", "reason": "Pricing with release status" },
+    { "table": "A305", "description": "Customer/Material Conditions", "level": "hard", "category": "Pricing", "reason": "Customer-specific pricing — highly confidential" },
+    { "table": "KOTE", "description": "Rebate Agreements", "level": "hard", "category": "Pricing", "reason": "Contains rebate agreement terms" },
+    { "table": "VBRL", "description": "Rebate Index", "level": "soft", "category": "Pricing", "reason": "Rebate document index" },
+    { "table": "EINE", "description": "Purchasing Info Record", "level": "soft", "category": "Pricing", "reason": "Contains purchase prices negotiated with vendors" },
+    { "table": "A017", "description": "Material Info Record Conditions", "level": "soft", "category": "Pricing", "reason": "Vendor-specific purchase pricing conditions" }
+  ]
+}

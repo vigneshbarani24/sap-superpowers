@@ -1,0 +1,17 @@
+{
+  "category": "Master Data PII",
+  "description": "Customer and vendor personally identifiable information — names, addresses, national IDs, contact details.",
+  "tables": [
+    { "table": "BUT000", "description": "Business Partner General Data", "level": "soft", "category": "PII", "reason": "Contains names, birth dates, nationality", "alternatives": "Use I_BusinessPartner CDS entity with field-level auth" },
+    { "table": "BUT020", "description": "BP Addresses", "level": "hard", "category": "PII", "reason": "Contains physical addresses" },
+    { "table": "BUT021", "description": "BP Address Usages", "level": "soft", "category": "PII", "reason": "Address usage assignments" },
+    { "table": "BUT0ID", "description": "BP Identification Numbers", "level": "hard", "category": "PII", "reason": "Contains national IDs, passport numbers, tax IDs" },
+    { "table": "KNA1", "description": "Customer General Data", "level": "soft", "category": "PII", "reason": "Contains customer names and addresses", "alternatives": "Use I_Customer CDS entity" },
+    { "table": "LFA1", "description": "Vendor General Data", "level": "soft", "category": "PII", "reason": "Contains vendor names and addresses", "alternatives": "Use I_Supplier CDS entity" },
+    { "table": "ADR6", "description": "Email Addresses", "level": "hard", "category": "PII", "reason": "Contains email addresses" },
+    { "table": "ADR2", "description": "Telephone Numbers", "level": "hard", "category": "PII", "reason": "Contains phone numbers" },
+    { "table": "ADR3", "description": "Fax Numbers", "level": "soft", "category": "PII", "reason": "Contains fax numbers" },
+    { "table": "ADRC", "description": "Address Central", "level": "hard", "category": "PII", "reason": "Central address repository with full street addresses" },
+    { "table": "ADRP", "description": "Person Address Data", "level": "hard", "category": "PII", "reason": "Contains person-level address data with names" }
+  ]
+}

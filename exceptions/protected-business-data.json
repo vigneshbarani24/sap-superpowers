@@ -1,0 +1,17 @@
+{
+  "category": "Protected Business Data",
+  "description": "Core financial documents, sales orders, purchase orders with amounts. Not blocked by default but flagged for awareness — volume extraction is a data breach.",
+  "tables": [
+    { "table": "BKPF", "description": "Accounting Document Header", "level": "soft", "category": "Finance", "reason": "FI document headers with posting amounts", "alternatives": "Use I_JournalEntry CDS entity" },
+    { "table": "BSEG", "description": "Accounting Document Segment", "level": "soft", "category": "Finance", "reason": "FI line items — use ACDOCA on S/4HANA instead", "alternatives": "Use I_JournalEntryItem or ACDOCA on S/4HANA" },
+    { "table": "ACDOCA", "description": "Universal Journal", "level": "soft", "category": "Finance", "reason": "S/4HANA universal journal — massive volume, contains all FI/CO postings", "alternatives": "Use I_JournalEntryItem CDS entity with proper filters" },
+    { "table": "VBAK", "description": "Sales Document Header", "level": "soft", "category": "Sales", "reason": "Sales order headers", "alternatives": "Use I_SalesOrder CDS entity" },
+    { "table": "VBAP", "description": "Sales Document Items", "level": "soft", "category": "Sales", "reason": "Sales order line items with pricing" },
+    { "table": "EKKO", "description": "Purchase Document Header", "level": "soft", "category": "Purchasing", "reason": "Purchase order headers with vendor amounts" },
+    { "table": "EKPO", "description": "Purchase Document Items", "level": "soft", "category": "Purchasing", "reason": "Purchase order line items" },
+    { "table": "MSEG", "description": "Material Document Segment", "level": "soft", "category": "Inventory", "reason": "Goods movement line items with quantities and values" },
+    { "table": "MKPF", "description": "Material Document Header", "level": "soft", "category": "Inventory", "reason": "Goods movement headers" },
+    { "table": "LIPS", "description": "Delivery Item Data", "level": "soft", "category": "Logistics", "reason": "Delivery items with quantities" },
+    { "table": "VBRK", "description": "Billing Document Header", "level": "soft", "category": "Finance", "reason": "Invoice headers with amounts" }
+  ]
+}

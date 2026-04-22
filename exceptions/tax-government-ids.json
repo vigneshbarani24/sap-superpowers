@@ -1,0 +1,15 @@
+{
+  "category": "Tax & Government IDs",
+  "description": "Tax identification numbers, government-issued IDs, withholding tax data. Subject to local data protection laws (GDPR, LGPD, PIPA).",
+  "tables": [
+    { "table": "DFKKBPTAXNUM", "description": "BP Tax Numbers (FI-CA)", "level": "hard", "category": "Tax", "reason": "Contains tax identification numbers" },
+    { "table": "WITH_ITEM", "description": "Withholding Tax Line Items", "level": "hard", "category": "Tax", "reason": "Contains withholding tax amounts tied to individuals" },
+    { "table": "BSET", "description": "Tax Data Document Segment", "level": "soft", "category": "Tax", "reason": "Tax amounts in accounting documents" },
+    { "table": "J_1BTXRC1", "description": "Brazil Tax ID Codes", "level": "hard", "category": "Tax", "reason": "CPF/CNPJ numbers — Brazilian national IDs" },
+    { "table": "J_1BNFDOC", "description": "Brazil Nota Fiscal", "level": "soft", "category": "Tax", "reason": "Electronic invoice with tax details" },
+    { "table": "J_1IEXCHDR", "description": "India Excise Header", "level": "soft", "category": "Tax", "reason": "Indian excise/GST details" },
+    { "table": "T059Z", "description": "Withholding Tax Country", "level": "soft", "category": "Tax", "reason": "Withholding tax configuration by country" },
+    { "table": "KNVV", "description": "Customer Sales Data", "level": "soft", "category": "Tax", "reason": "Contains tax classification codes tied to customers" },
+    { "table": "TTXD", "description": "Tax Determination", "level": "soft", "category": "Tax", "reason": "Tax determination procedures — config, not transactional" }
+  ]
+}

@@ -1,18 +1,41 @@
 {
   "name": "sap-superpowers",
-  "description": "AI skills for SAP consultants — process workflows, domain knowledge, and project accelerators for the entire SAP lifecycle",
-  "version": "1.0.0",
-  "author": {
-    "name": "vigneshbarani24",
-    "url": "https://github.com/vigneshbarani24"
-  },
-  "homepage": "https://sap-superpowers.vercel.app/",
-  "repository": "https://github.com/vigneshbarani24/sap-superpowers",
+  "version": "3.1.0",
+  "description": "The AI operating system for SAP consultants. 55 skills, 25 agents, 8 commands, delivery factory, solution accelerators. Covers the entire SAP lifecycle — consulting, development, delivery, hypercare. Industry-aware. Country-localized. Enterprise-grade data protection.",
+  "author": "vigneshbarani24",
   "license": "MIT",
+  "repository": "https://github.com/vigneshbarani24/sap-superpowers",
+  "homepage": "https://sap-superpowers.md",
   "keywords": [
-    "sap", "abap", "s4hana", "rise", "btp", "fiori", "clean-core",
-    "migration", "activate", "basis", "consulting", "fi", "co",
-    "mm", "sd", "pp", "pm", "hcm", "successfactors", "integration",
-    "hana", "cap", "rap", "grc", "security", "estimation"
-  ]
+    "sap",
+    "abap",
+    "s4hana",
+    "consulting",
+    "erp",
+    "fiori",
+    "btp",
+    "sap-activate",
+    "clean-core",
+    "rap",
+    "cds",
+    "migration",
+    "estimation",
+    "code-review",
+    "delivery-factory"
+  ],
+  "categories": [
+    "enterprise",
+    "consulting",
+    "development",
+    "sap"
+  ],
+  "engines": {
+    "claude-code": ">=1.0.0"
+  },
+  "skills": 55,
+  "agents": 25,
+  "commands": 8,
+  "hooks": 6,
+  "industries": 14,
+  "countries": 16
 }

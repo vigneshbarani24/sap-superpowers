@@ -1,0 +1,15 @@
+{
+  "category": "Audit & Security Logs",
+  "description": "System logs, audit trails, change documents, security events. Required for compliance — extraction may violate audit chain of custody.",
+  "tables": [
+    { "table": "CDHDR", "description": "Change Document Header", "level": "soft", "category": "Audit", "reason": "Contains change document headers — tracks who changed what and when", "alternatives": "Use released APIs for change document reading" },
+    { "table": "CDPOS", "description": "Change Document Items", "level": "soft", "category": "Audit", "reason": "Contains old/new values of changed fields" },
+    { "table": "DBTABLOG", "description": "Table Logging", "level": "hard", "category": "Audit", "reason": "System table change logs — compliance-critical" },
+    { "table": "SM21_LOG", "description": "System Log", "level": "hard", "category": "Security", "reason": "System log entries — security event records" },
+    { "table": "BAL_LOG", "description": "Application Log", "level": "soft", "category": "Audit", "reason": "Application log entries" },
+    { "table": "BALHDR", "description": "Application Log Header", "level": "soft", "category": "Audit", "reason": "Application log headers" },
+    { "table": "TPCL", "description": "Transport Change Log", "level": "soft", "category": "Audit", "reason": "Transport modification log — audit relevant" },
+    { "table": "RSSCD100", "description": "Change Document Summary", "level": "soft", "category": "Audit", "reason": "Summarized change documents" },
+    { "table": "SEC_AUD", "description": "Security Audit Log", "level": "hard", "category": "Security", "reason": "Security audit log entries — forensic evidence" }
+  ]
+}

@@ -2,14 +2,48 @@
   "hooks": {
     "SessionStart": [
       {
-        "matcher": "startup|resume|clear|compact",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/session-start\"",
-            "async": false
-          }
-        ]
+        "type": "command",
+        "command": "bash $CLAUDE_PLUGIN_ROOT/hooks/session-start.sh",
+        "timeout": 30000,
+        "description": "Initialize SAP Superpowers session — inject meta-skill, detect platform, load config"
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "type": "command",
+        "command": "node $CLAUDE_PLUGIN_ROOT/hooks/prompt-router.mjs",
+        "timeout": 5000,
+        "description": "Detect SAP keywords in user prompt and inject relevant skill context"
+      }
+    ],
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "node $CLAUDE_PLUGIN_ROOT/hooks/pre-tool-enforcer.mjs",
+        "timeout": 3000,
+        "description": "Enforce data protection blocklist — block sensitive table access without explicit approval"
+      },
+      {
+        "type": "command",
+        "command": "node $CLAUDE_PLUGIN_ROOT/hooks/transport-validator.mjs",
+        "timeout": 3000,
+        "description": "Validate transport discipline — require transport number and standardized description"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "node $CLAUDE_PLUGIN_ROOT/hooks/post-tool-verifier.mjs",
+        "timeout": 5000,
+        "description": "Verify tool results — check activation status, syntax errors, ATC findings"
+      }
+    ],
+    "PreCompact": [
+      {
+        "type": "command",
+        "command": "node $CLAUDE_PLUGIN_ROOT/hooks/pre-compact-saver.mjs",
+        "timeout": 5000,
+        "description": "Preserve critical SAP context before context window compaction"
       }
     ]
   }
