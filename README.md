@@ -41,6 +41,59 @@ Cursor, Codex, Gemini CLI, Copilot CLI — they all read Markdown. Point them at
 
 ---
 
+## 🍳 Usage — a day in 5 prompts
+
+The exact thing to type when each scenario hits. Copy, adapt the specifics, paste.
+
+### 1. A dump lands in production
+
+```text
+/sap-debug — MESSAGE_TYPE_X in VA01, plant 1000, customer 1234567,
+triggered on save. ST22 dump ID 20260422-0931-USR03.
+```
+
+→ Layer classification · SAP Note search · root-cause report with the fix and transport. **Saves ~4 hours of Google + Notes spelunking.**
+
+### 2. Steering committee wants a number by Friday
+
+```text
+/sap-estimate — 3 new Fiori apps on PO release workflow. S/4HANA 2023
+on-prem. 2 mid ABAP + 1 Fiori + 1 functional. 6-week window.
+```
+
+→ WBS · 6 SAP complexity multipliers · three-point PERT range · documented assumptions. **Single-number estimates are blocked.**
+
+### 3. Code review before release
+
+```text
+/sap-review — paste the ABAP. Target S/4HANA 2023, ABAP Cloud Tier 3.
+Flag BSEG reads, non-CDS extracts, clean-core violations.
+```
+
+→ Four-dimension review (quality / performance / security / clean core) with CRITICAL findings surfaced first, CDS rewrites inline.
+
+### 4. Functional spec due at 5pm
+
+```text
+/sap-doc FS — PO approval workflow. Dual approval above €50k
+(mgr + finance). Tolerance 5% price, 10% quantity. ME59N release strategy.
+```
+
+→ Structured FS (objective → scope → as-is → to-be → config → auth) with BPMN-ready flow and real SPRO paths.
+
+### 5. Going live in 3 weeks
+
+```text
+/sap-go-live-readiness — S/4HANA 2023, cutover 2026-05-13.
+Scope FI + MM + SD, 3 company codes. UAT 87% complete.
+```
+
+→ 10 hard gates · evidence required per gate · cutover runbook with rollback triggers · Go/Conditional-Go/No-Go decision matrix.
+
+**See all 8 scenarios in the [cookbook →](https://sap-superpowers.vercel.app/cookbook)**
+
+---
+
 ## 🎯 What You Get
 
 **55 skills** that force Claude to do SAP the right way:
@@ -76,9 +129,9 @@ Cursor, Codex, Gemini CLI, Copilot CLI — they all read Markdown. Point them at
 2. **📢 Share it** — drop the link in your SAP Teams channel, LinkedIn, or SAP Community.
 3. **🛠️ Contribute** — one skill per PR. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-> *"Joule tells you the warehouse is on fire. Superpowers hands you the extinguisher,
-> the root-cause report, the transport, and the post-mortem — before the steering
-> committee finishes their coffee."*
+> *"Joule is how SAP teams run SAP from the inside. Superpowers is how they build
+> on SAP from the outside. Both are necessary — and the teams that deploy them
+> together finish the work faster."*
 
 ---
 
